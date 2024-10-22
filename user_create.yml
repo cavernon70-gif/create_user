@@ -1,5 +1,9 @@
 ---
 - name: user creation play
-  hosts:
+  hosts: dev
   tasks:
-    - name: user creation on ...
+    - name: user creation on dev group
+      ansible.builtin.user:
+        name: john
+        comment: developer
+        state: present
