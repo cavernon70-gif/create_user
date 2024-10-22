@@ -1,0 +1,5 @@
+---
+- name: user creation play
+  hosts:
+  tasks:
+    - name: user creation on ...
